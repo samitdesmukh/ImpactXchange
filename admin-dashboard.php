@@ -1,3 +1,9 @@
+<?php
+    include("header.php");
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +31,7 @@
             padding: 20px;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
             position: fixed;
-            top: 0;
+            top:20px;
             bottom: 0;
             overflow-y: auto;
             border-right: 1px solid #ddd; /* Add a border to separate the sidebar */

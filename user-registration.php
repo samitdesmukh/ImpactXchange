@@ -1,10 +1,14 @@
+<?php
+    include("header.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Registration</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets_pages/css/styles.css">
 </head>
 <body>
     <div class="registration-container">
@@ -28,7 +32,7 @@
                 <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
             </div>
             <button type="submit" class="btn">Register</button>
-            <p class="login-link">Already have an account? <a href="login.html">Login</a></p>
+            <p class="login-link">Already have an account? <a href="login.php">Login</a></p>
         </form>
     </div>
 </body>

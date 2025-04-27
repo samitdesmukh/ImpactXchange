@@ -1,10 +1,14 @@
+<?php
+    include("header.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets_pages/css/styles.css">
 </head>
 <body>
     <div class="login-container">
@@ -21,7 +25,7 @@
             </div>
             <button type="submit" class="btn">Login</button>
             <div class="alert" id="alert" style="display: none;"></div>
-            <p class="signup-link">Don't have an account? <a href="#">Sign up</a></p>
+            <p class="signup-link">Don't have an account? <a href="./user-registration.php">Sign up</a></p>
         </form>
     </div>
     <script src="assets/js/script.js"></script>
