@@ -1,9 +1,13 @@
+<?php
+    include("header.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Admin Registration</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
@@ -19,7 +23,7 @@
         .container {
             display: flex;
             width: 800px;
-            height: 500px;
+            height: 600px;
             background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
             border-radius: 15px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -102,15 +106,15 @@
         .btn:hover {
             background-color: #357ab8;
         }
-        .register-link {
+        .login-link {
             text-align: center;
             margin-top: 15px;
         }
-        .register-link a {
+        .login-link a {
             color: #6a11cb;
             text-decoration: none;
         }
-        .register-link a:hover {
+        .login-link a:hover {
             text-decoration: underline;
         }
     </style>
@@ -119,25 +123,29 @@
     <div class="container">
         <!-- Left Section -->
         <div class="left-section">
-            <h2>Hello, Welcome!</h2>
-            <p>Don't have an account?</p>
-            <button onclick="window.location.href='ngo_registration.html'">Register</button>
+            <h2>Welcome Back!</h2>
+            <p>Already have an account?</p>
+            <button onclick="window.location.href='admin_login.html'">Login</button>
         </div>
 
         <!-- Right Section -->
         <div class="right-section">
-            <h3>Login</h3>
-            <form id="loginForm">
+            <h3>Admin Registration</h3>
+            <form id="adminRegistrationForm">
+                <div class="form-group">
+                    <label for="admin-name">Admin Name</label>
+                    <input type="text" id="admin-name" name="admin-name" placeholder="Enter your name" required>
+                </div>
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="Enter your email" required>
                 </div>
                 <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    <label for="contact">Contact Number</label>
+                    <input type="text" id="contact" name="contact" placeholder="Enter your contact number" required>
                 </div>
-                <button type="submit" class="btn">Login</button>
-                <p class="register-link">Forgot your password? <a href="#">Reset Password</a></p>
+                
+                <button type="submit" class="btn">Register</button>
             </form>
         </div>
     </div>

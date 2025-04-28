@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>NGO Registration</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
@@ -19,7 +19,7 @@
         .container {
             display: flex;
             width: 800px;
-            height: 500px;
+            height: 650px;
             background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
             border-radius: 15px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -76,14 +76,17 @@
             font-weight: bold;
             margin-bottom: 5px;
         }
-        .form-group input {
+        .form-group input, .form-group textarea {
             width: 100%;
             padding: 10px;
             border: 1px solid #ddd;
             border-radius: 5px;
             font-size: 1em;
         }
-        .form-group input:focus {
+        .form-group textarea {
+            resize: none;
+        }
+        .form-group input:focus, .form-group textarea:focus {
             outline: none;
             border-color: #6a11cb;
             box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
@@ -102,15 +105,15 @@
         .btn:hover {
             background-color: #357ab8;
         }
-        .register-link {
+        .login-link {
             text-align: center;
             margin-top: 15px;
         }
-        .register-link a {
+        .login-link a {
             color: #6a11cb;
             text-decoration: none;
         }
-        .register-link a:hover {
+        .login-link a:hover {
             text-decoration: underline;
         }
     </style>
@@ -119,25 +122,41 @@
     <div class="container">
         <!-- Left Section -->
         <div class="left-section">
-            <h2>Hello, Welcome!</h2>
-            <p>Don't have an account?</p>
-            <button onclick="window.location.href='ngo_registration.html'">Register</button>
+            <h2>Welcome Back!</h2>
+            <p>Already registered?</p>
+            <button onclick="window.location.href='ngo_login.html'">Login</button>
         </div>
 
         <!-- Right Section -->
         <div class="right-section">
-            <h3>Login</h3>
-            <form id="loginForm">
+            <h3>NGO Registration</h3>
+            <form id="ngoRegistrationForm">
+                <div class="form-group">
+                    <label for="ngo-name">NGO Name</label>
+                    <input type="text" id="ngo-name" name="ngo-name" placeholder="Enter your NGO name" required>
+                </div>
+                <div class="form-group">
+                    <label for="registration-number">Registration Number</label>
+                    <input type="text" id="registration-number" name="registration-number" placeholder="Enter your registration number" required>
+                </div>
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="Enter your email" required>
                 </div>
                 <div class="form-group">
+                    <label for="contact">Contact Number</label>
+                    <input type="text" id="contact" name="contact" placeholder="Enter your contact number" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">NGO Address</label>
+                    <textarea id="address" name="address" rows="1" placeholder="Enter your NGO address" required></textarea>
+                </div>
+                <div class="form-group">
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password" placeholder="Enter your password" required>
                 </div>
-                <button type="submit" class="btn">Login</button>
-                <p class="register-link">Forgot your password? <a href="#">Reset Password</a></p>
+                
+                <button type="submit" class="btn">Register</button>
             </form>
         </div>
     </div>
