@@ -214,29 +214,29 @@
     </div>
 
     ...
-    <!-- TEAM SECTION -->
+<!-- TEAM SECTION -->
     <div class="team-section">
         <h1>Meet Our Team</h1>
+        <img src="./assets/TEAM.png" alt="team image">
+
         <div class="team-members">
             <div class="team-member">
-                <img src="./assets/team_member1.jpg" alt="Team Member 1">
-                <h3>abc </h3>
+                <h3>SAMIT DESMUKH & PRATYUSHA BHANDARY</h3>
+        
                 <p>Founder & CEO</p>
             </div>
             <div class="team-member">
-                <img src="./assets/team_member2.jpg" alt="Team Member 2">
-                <h3>xyz
-                </h3>
+                <h3>JYOTI SHAW</h3>
+                
                 <p>Operations Manager</p>
             </div>
             <div class="team-member">
-                <img src="./assets/team_member3.jpg" alt="Team Member 3">
-                <h3>pqr</h3>
+                <h3>SAYAN POREY</h3>
+                
                 <p>Community Outreach</p>
             </div>
         </div>
     </div>
-
    
 
     <!-- FOOTER -->
